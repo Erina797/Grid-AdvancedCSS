@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+}
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: rgb(213, 203, 203);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+                        "a a" 
+                        "b c"
+                        "d d";
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 7fr 1fr;
+ 
+}
+
+.head{
+    grid-area: a;
+    background-color: rgb(3, 3, 109);
+    color: white;
+ 
+}
+
+.aside{
+    grid-area: b;
+    background-color: rgb(213, 203, 203);
+
+}
+
+.article{
+    grid-area: c;
+    
+}
+
+.footer{
+    grid-area: d;
+    background-color: rgb(2, 1, 31);
+    color: white;
+    
+    
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+     
+}
+
+
+.flex-aside{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.margin{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.margin-left{
+    margin-left: 1rem;
+}
+
+.margin-bottom{
+    margin-bottom: 25px;
+}
+
+.margin-btn{
+    margin-left: 10px;
+}
+
+
+/* Segundo Grid */
+
+.grid-container-card{
+    display: grid;
+    gap: 1rem;
+    height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    margin-left: 10px;  
+    margin-right: 10px;
+}
+
+.background{
+    background-color: white;
+    
+}
+
+.flex-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    
+}
+
+
+.img{
+    width: 100%;
+    height:80%;
+} 
+
+.button{
+    width: 100%;
+    background-color: rgb(3, 3, 109);
+    color: white;
+    border: rgb(3, 3, 109) solid;
+    text-decoration: none;
+   
+    
+}
+
+button:hover{
+    background-color: cornflowerblue;
+    cursor: pointer;
+    
+}
+
+button:active{
+   color: rgb(9, 10, 25);
+}
+
+.margin-y{
+    margin-top: 0.5rem;
+    margin-bottom: 5px;
+}
+
+.margin-price{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
